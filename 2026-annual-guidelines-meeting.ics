@@ -1,8 +1,12 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//ChatGPT//FRCSE//EN
+PRODID:-//FirstUPCJax//Music Department//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+X-WR-CALNAME:FirstUPCJax - Music Dept
+X-WR-CALDESC:Music Department events and meetings
+X-WR-TIMEZONE:America/New_York
+
 BEGIN:VTIMEZONE
 TZID:America/New_York
 X-LIC-LOCATION:America/New_York
@@ -21,17 +25,36 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+
 BEGIN:VEVENT
-UID:4b4bca23-808c-47b2-8297-6ddf2efa9f11@firstupcjax
-DTSTAMP:20260120T215926Z
-SUMMARY:2026 Annual Guidelines Meeting
+UID:20260127T190000-annual-guidelines@firstupcjax
+DTSTAMP:20260121T000000Z
+SUMMARY:Music Dept Guidelines Meeting
 DTSTART;TZID=America/New_York:20260127T190000
 DTEND;TZID=America/New_York:20260127T200000
 LOCATION:FirstUPCJax\, 11697 Normandy Blvd\, Jacksonville\, FL 32221 (Room TBA)
-DESCRIPTION:Music Department mandatory meeting. Exact room TBA (to be announced). Contact Ben or Karissa Meehan with questions.\nEvent page: https://firstupcjax.churchcenter.com/my/groups/music-department/events
+DESCRIPTION:Mandatory meeting for all Music Department members. Exact room TBA. Contact Ben or Karissa Meehan with questions.\nEvent page: https://firstupcjax.churchcenter.com/my/groups/music-department/events
 URL:https://firstupcjax.churchcenter.com/my/groups/music-department/events
-CATEGORIES:Music Department,Church,Meeting
 STATUS:CONFIRMED
 TRANSP:OPAQUE
+
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+
 END:VEVENT
 END:VCALENDAR
